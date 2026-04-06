@@ -67,7 +67,7 @@ class Worker(QThread):
             running = self._is_running
             self.lock.unlock()
             if first_loop == False:
-                first_loop == True
+                first_loop = True
             else:
                 current_target_buy_number = self.target_buy_number
             if running:
